@@ -9,13 +9,13 @@ class Herald < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/herald-email/herald-mail-app/releases/download/v0.1.0-beta.1/herald-v0.1.0-beta.1-darwin-arm64.tar.gz"
-      sha256 "273e48e3b871d7c800801f2fe9ed4610ea9a5ff6c77c5850fb78b300e0fab7e9"
+      url "https://github.com/herald-email/herald-mail-app/releases/download/v0.1.1-beta.1/herald-v0.1.1-beta.1-darwin-arm64.tar.gz"
+      sha256 "263e83e81a81f38c3bd7117bd440732ce5ff4677abaa7cd045301f29d4d2f518"
     end
 
     on_intel do
-      url "https://github.com/herald-email/herald-mail-app/releases/download/v0.1.0-beta.1/herald-v0.1.0-beta.1-darwin-amd64.tar.gz"
-      sha256 "380187a42200d184dfd803c2fc69491d61a5eea989a175d14f5dd1ac761722ad"
+      url "https://github.com/herald-email/herald-mail-app/releases/download/v0.1.1-beta.1/herald-v0.1.1-beta.1-darwin-amd64.tar.gz"
+      sha256 "6bdef001788173e86308590b09cb94563de4cabfeee69defb309b96a32f07da9"
     end
   end
 
