@@ -9,13 +9,13 @@ class Herald < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/herald-email/herald-mail-app/releases/download/v0.1.4-beta.5/herald-v0.1.4-beta.5-darwin-arm64.tar.gz"
-      sha256 "d85107339a0c008809e6f4fb806eaba39226281e1f950498d3752b342422f340"
+      url "https://github.com/herald-email/herald-mail-app/releases/download/v0.1.5-beta.1/herald-v0.1.5-beta.1-darwin-arm64.tar.gz"
+      sha256 "bed41d7d0d3ca2449b0515ffa84976f33a0b9301242bb68038fb70bd512ad36a"
     end
 
     on_intel do
-      url "https://github.com/herald-email/herald-mail-app/releases/download/v0.1.4-beta.5/herald-v0.1.4-beta.5-darwin-amd64.tar.gz"
-      sha256 "6256703b94077c255e2488dde4afd8ff8c868fa088657d632fb1bc680bf1e2f5"
+      url "https://github.com/herald-email/herald-mail-app/releases/download/v0.1.5-beta.1/herald-v0.1.5-beta.1-darwin-amd64.tar.gz"
+      sha256 "791b34799edb0ce034fa2b9dd8e649fe01a0ad7d0737c416abf33e7ced31ade5"
     end
   end
 
@@ -27,10 +27,12 @@ class Herald < Formula
 
   test do
     system bin/"herald", "--version"
+    system bin/"herald", "mcp", "--version"
+    system bin/"herald", "ssh", "--version"
     system bin/"herald-mcp-server", "--version"
     system bin/"herald-ssh-server", "--version"
 
     request = '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
-    assert_match "\"tools\"", shell_output("echo '#{request}' | #{bin}/herald-mcp-server --demo")
+    assert_match "\"tools\"", shell_output("echo '#{request}' | #{bin}/herald mcp --demo")
   end
 end
