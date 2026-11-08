@@ -9,25 +9,25 @@ class Herald < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/herald-email/herald-mail-app/releases/download/v0.9.0-beta.1/herald-v0.9.0-beta.1-darwin-arm64.tar.gz"
-      sha256 "5fca491bfe08eedf507102e5836d33e4e7f65d4542edd31e3110bfc9ae0c0cf6"
+      url "https://github.com/herald-email/herald-mail-app/releases/download/v0.10.0-beta.1/herald-v0.10.0-beta.1-darwin-arm64.tar.gz"
+      sha256 "4509a39fc99264894f4c56f72efe82a80ebf374efb3478e2b36b710dde622895"
     end
 
     on_intel do
-      url "https://github.com/herald-email/herald-mail-app/releases/download/v0.9.0-beta.1/herald-v0.9.0-beta.1-darwin-amd64.tar.gz"
-      sha256 "30ee3269ab2f13377cdb3037d7fd44ab282dc3d353fe7b39f84992e7c44b183d"
+      url "https://github.com/herald-email/herald-mail-app/releases/download/v0.10.0-beta.1/herald-v0.10.0-beta.1-darwin-amd64.tar.gz"
+      sha256 "856fc327ddbe4a5c99808bacb45e02dde8aed6149082623c0c132964574692dd"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/herald-email/herald-mail-app/releases/download/v0.9.0-beta.1/herald-v0.9.0-beta.1-linux-arm64.tar.gz"
-      sha256 "05f341027e9bef82b00090e8547198db4e577a6ed8c8e718b713d8f37e627b60"
+      url "https://github.com/herald-email/herald-mail-app/releases/download/v0.10.0-beta.1/herald-v0.10.0-beta.1-linux-arm64.tar.gz"
+      sha256 "5ab7586ec0e19924f0b8bfe3ce239a7a37d48b0f80ec9627e028de6bfb789539"
     end
 
     on_intel do
-      url "https://github.com/herald-email/herald-mail-app/releases/download/v0.9.0-beta.1/herald-v0.9.0-beta.1-linux-amd64.tar.gz"
-      sha256 "0a81213b85846bb95fec403ae4ee3ff69093f9be746e13bfb059b8280b6949e3"
+      url "https://github.com/herald-email/herald-mail-app/releases/download/v0.10.0-beta.1/herald-v0.10.0-beta.1-linux-amd64.tar.gz"
+      sha256 "2b6f98344346797ff72af09aa78394d7541d6bb6a83a8d47284984a699eab8c2"
     end
   end
 
